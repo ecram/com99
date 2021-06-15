@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rowspan y Colspan</title>
+</head>
+<body>
+	<h3>Rowspan y Colspan</h3>
+	<hr>
+	<table border="1" width=500 height=200>
+		<tr>
+			<th colspan="2">Encabezado de dos columnas</th>
+			<th>Encabezado 3</th>
+		</tr>
+		<tr>
+			<td rowspan="2">CELDA 1 FILA 3</td>
+			<td>CELDA 2 FILA 2</td>
+			<td>CELDA 3 FILA 2</td>
+		</tr>
+		<tr>
+			<td>CELDA 2 FILA 3</td>
+			<td>CELDA 3 FILA 3</td>
+		</tr>
+	</table>
+
+	<tr>
+
+	<table border="1" width=500 height=200>
+		<tr>
+			<th colspan="2">Encabezado de dos columnas</th>
+			<th>Encabezado 3</th>
+		</tr>
+		<tr>
+			<td rowspan="2">CELDA 1 FILA 3</td>
+			<td colspan="2" rowspan="2">CELDA 2 FILA 2</td>
+		</tr>
+		<tr></tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+	</table>
+
+</body>
+</html>
