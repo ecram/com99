@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<title>Formularios</title>
 </head>
 <body>
@@ -39,9 +41,48 @@
 		<input type="submit" name="Izquierda" value="izquierda">
 		<input type="submit" name="Derecha" value="derecha">
 		<input type="submit" name="Abajo" value="abajo">
+		<br><br>
+		<input type="reset" value="Borrar"/>
+		<br><br>
+		<button type="reset" name="borrar">Borrar todo</button>
+		<br><br>
+		<input type="hidden" name="edad" value="19" />
+		<br><br>
+		<input type="text" name="texto" value="Camila" disabled/>
+		<br>
+		<input type="text" name="texto" value="Camila" readonly/>
+		<br><br>
+		<!--cols les muestra el número de caracteres por línea que se pueden ver-->
+		<!--rows les muestra el número de  líneas que exhibe el objeto textarea-->
+		<textarea name="comentarios" cols="10" rows="5">Esto es un cuadro de texto de multiples lineas funciona solo con texto plano.
+		</textarea>
+		<br><br>
+		<textarea name="comentarios" cols="50" rows="10">Esto es un cuadro de texto de multiples lineas funciona solo con texto plano.
+		</textarea>
+		<br><br>
+		<select name="color" size="3">
+			<option></option>
+			<option>Negro</option>
+			<option>Rojo</option>
+			<option>Verde</option>
+			<option>Azul</option>
+			<option>Morado</option>
+		</select>
+		<br>
+		Seleccionar varias opciones manteniendo presionada la tecla control
 	</form>
 	</td>
 	</tr>
 </table>
+
+<br><br>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
 </body>
 </html>
